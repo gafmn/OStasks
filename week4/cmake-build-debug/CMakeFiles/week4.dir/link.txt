@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/week4.dir/ex2.c.o CMakeFiles/week4.dir/ex3.c.o CMakeFiles/week4.dir/ex1.c.o  -o week4 

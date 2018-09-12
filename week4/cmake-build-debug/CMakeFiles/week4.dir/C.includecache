@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/madina.gafarova/CLionProjects/week4/ex1.c
+stdio.h
+-
+stdlib.h
+-
+zconf.h
+-
+
+/Users/madina.gafarova/CLionProjects/week4/ex2.c
+stdio.h
+-
+zconf.h
+-
+
+/Users/madina.gafarova/CLionProjects/week4/ex3.c
+stdio.h
+-
+stdlib.h
+-
+
