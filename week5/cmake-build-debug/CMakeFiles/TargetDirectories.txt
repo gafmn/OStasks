@@ -1,0 +1,3 @@
+/Users/madina.gafarova/CLionProjects/week5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/madina.gafarova/CLionProjects/week5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/madina.gafarova/CLionProjects/week5/cmake-build-debug/CMakeFiles/week5.dir
