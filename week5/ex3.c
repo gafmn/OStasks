@@ -21,11 +21,13 @@ void* consumerFunction(void* var){
     while (i < MAX){
         printf("From consumer\n");
         if (count == 0){
+            printf("Consumer is sleeping\n");
             sleep();
         } else{
             int number = buffer[count - 1];
             count--;
             if (count == SIZEBUFFER - 1){
+                printf("Consumer waked up\n");
                 wakeup();
             }
         }
@@ -38,11 +40,13 @@ void* procedureFunction(void* var){
     while (j < MAX){
         printf("From procedure\n");
         if (count == SIZEBUFFER){
+            printf("Procedure is sleeping");
              sleep();
         } else{
             buffer[count - 1] = (int) SIZEBUFFER / 2;
             count++;
             if (count == 1){
+                printf("Procedure waked up\n");
                 wakeup();
             }
         }
@@ -59,8 +63,10 @@ int main(){
     pthread_create(&consumer, NULL, consumerFunction, NULL);
     pthread_create(&procedure, NULL, procedureFunction, NULL);
 
-    pthread_join(&consumer, NULL);
-    pthread_join(&procedure, NULL);
+    pthread_join(consumer, NULL);
+    pthread_join(procedure, NULL);
+
+
     return 0;
 }
 
