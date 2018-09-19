@@ -1,6 +1,6 @@
 ./ex2.sh &
 while true; do
-	if ! ln file.txt file.txt.lock 
+	if  ln file.txt file.txt.lock 
 	then 
 		sleep 1
 	else
