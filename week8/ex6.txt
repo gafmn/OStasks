@@ -1,0 +1,2 @@
+Pages are 8KB, offset is 13 bits. It means that we have 16-13=3 bits for identifing pages.
+2^3 = 8 pages are possibl.e Thus, page table must have 8 entries.
