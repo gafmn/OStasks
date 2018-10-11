@@ -1,0 +1,2 @@
+For Virtual addressing, all application memory accesses go to page table. It enables a process to use a location in primary memory independently of other processes
+In physical addressing program knowns the real layout of RAM. It is the address seen by the MMU.
