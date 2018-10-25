@@ -1,0 +1,17 @@
+Madinas-MacBook-Air:tmp madina.gafarova$ touch file1
+Madinas-MacBook-Air:tmp madina.gafarova$ touch file2
+Madinas-MacBook-Air:tmp madina.gafarova$ ln file1 link1
+Madinas-MacBook-Air:tmp madina.gafarova$ cd ..
+Madinas-MacBook-Air:week10 madina.gafarova$ gcc ex4.c -o a.out
+ex4.c:66:45: warning: format specifies type 'unsigned long' but the argument has
+      type 'ino_t' (aka 'unsigned long long') [-Wformat]
+            fprintf(outFile, "I-node %lu ", entries[j].iNodeNum);
+                                     ~~~    ^~~~~~~~~~~~~~~~~~~
+                                     %llu
+ex4.c:67:49: warning: format specifies type 'unsigned long' but the argument has
+      type 'nlink_t' (aka 'unsigned short') [-Wformat]
+            fprintf(outFile, "has %lu links: ", entries[j].nLinks);
+                                  ~~~           ^~~~~~~~~~~~~~~~~
+                                  %hu
+2 warnings generated.
+Madinas-MacBook-Air:week10 madina.gafarova$ ./a.out

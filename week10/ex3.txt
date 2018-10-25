@@ -1,0 +1,19 @@
+total 8
+-rw-r--r-- 1 root root  11 Oct 24 15:22 _ex2.txt
+---------- 1 root root   0 Oct 24 15:24 _ex3.txt
+-rw-r--r-- 1 root root 223 Oct 24 16:45 ex2.txt
+-rw-r--r-- 1 root root   0 Oct 25 09:46 ex3.txt
+________________________________________________
+
+total 12
+-rw-r--r-- 1 root root  11 Oct 24 15:22 _ex2.txt
+-rwx---rwx 1 root root   0 Oct 24 15:24 _ex3.txt
+-rw-r--r-- 1 root root 223 Oct 24 16:45 ex2.txt
+-rw-r--r-- 1 root root 252 Oct 25 09:46 ex3.txt
+________________________________________________
+
+total 12
+-rw-r--r-- 1 root root  11 Oct 24 15:22 _ex2.txt
+-rwxrwxrwx 1 root root   0 Oct 24 15:24 _ex3.txt
+-rw-r--r-- 1 root root 223 Oct 24 16:45 ex2.txt
+-rw-r--r-- 1 root root 505 Oct 25 09:47 ex3.txt
