@@ -1,0 +1,25 @@
+    1  git clone 
+    2  06176
+    3  brew install python3
+    4  ssh -X [username]@osc-[N].edu.innopolis.
+    5  mkdir ~/week1
+    6  cd ~/week1
+    7  gedit ~/week1/main.c
+    8  sudo apt install gedit 
+    9  vim main.c
+   10  gcc main.c - o ex 4
+   11  gcc main.x -o ex4
+   12  gcc main.c -o ex4
+   13  ./ex4
+   14  date
+   15  sleep
+   16  sleep 3
+   17  date
+   18  sleep 3
+   19  vim ex3.sh
+   20  sh ex3.sh
+   21  ~/ week1/ex2.txt
+   22  ex2.txt
+   23  touch ex2.txt
+   24  history
+   25  history > ex2.txt
