@@ -1,0 +1,1 @@
+In first case, we have 2 times "Hello"s. And in second case we have only 1 "Hello". This is because of new line(\n) was found. the buffer cleared and then fork() was found. 
