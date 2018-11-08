@@ -1,0 +1,17 @@
+Testing performance of the 'copy' program with different compilation flags.
+File used for copy: 'file', which has size of 10 MBytes.
+
+Execution time of the program with default compilation and different buffer sizes:
+    'DBUF_SIZE=50000' - 0.031s
+    'DBUF_SIZE=100000' - 0.029s
+    'DBUF_SIZE=200000' - 0.030s
+    'DBUF_SIZE=500000' - 0.030s
+
+With compilation using O_SYNC flag:
+    'DBUF_SIZE=50000' - 10.612s
+    'DBUF_SIZE=100000' - 5.199s
+    'DBUF_SIZE=200000' - 2.706s
+    'DBUF_SIZE=500000' - 1.111s
+
+O_SYNC flag is dramatically slowed the program, because it implements Synchronized I/O file integrity completion.
+This approach guarantees that program won't be executing during the file writing.
