@@ -1,0 +1,14 @@
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 61
+model name	: Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz
+stepping	: 4
+cpu MHz		: 1798.708
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicidð^¥ü
