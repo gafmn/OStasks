@@ -1,0 +1,37 @@
+Avoidance strategy
+For avoiding deadlock is to require additional information about how the resources are to be requested with complete knowledge of sequence of request and release for each process we can decide for each request whether the current requesties satisfied or must wait to avoid a future deadlock. 
+
+The simplest algorithm requires that each process should declare maximum number of resources of each type that may need. A deadlock avoidence algorithm dynamically examine the resource allocation state to ensure that there can never be a circular wait condition.
+
+Requirements for Deadlock Avoidance
+
+Maximum resource requirement must be stated in advance 
+Processes under consideration must be independent; no synchronization requirements 
+There must be a fixed number of resources to allocate 
+No process may exit while holding resources
+
+
+Prevention strategy 
+
+Mutual exclusion: 
+	An effort should be made to prevent the mutual exclusion. This is possible by making all the sharable resources sharable. But few resources cannot be changed from nonsharable to sharable. For example, if you have several processes that want to update a file, and you allow them to have simultaneous write privileges, then your data might be inconsistent. This is a condition where mutual exclusion is must. Overall conclusion is that denying mutual exclusion can create more problems than it solves.
+
+Hold and wait
+	To prevent hold-and-wait condition from happening, we can use rule “a process may not request a resource if it is holding another resource”. It implies that a process should have released all its resources before it requests for additional resources. For example, to take the print out of the contents of a file, the disk and printer should be requested before hand. In this case, there are 2 problems: low resource utilization and starvation
+
+No preemption
+	If a process that is holding some resources request another resources that cannot be immediately allocated to it then resources currently being hold are pre-empted.
+
+Circular wait 
+	To avoid circular wait total ordering of all resource type is imposed and each process is required to request resources in increasing order of enumeration.
+
+Whether one of these prevention strategies can apply to a given resource depends on the nature of the resource and how it is used. For example, ordered allocation works well for mutexes, but preemption of a mutex is not acceptable.
+
+
+
+Recovery from deadlock 
+
+When a detection algorithm determines that a deadlock exists, several alternatives are available. One possibility is to inform the operator that a deadlock has occurred and to let the operator deal with the deadlock manually. Another possibility is to let the system recover from the deadlock automatically. There are two options for breaking a deadlock. One is simply to abort one or more processes to break the circular wait. The other is to preempt some resources from one or more of the deadlock processes.
+
+
+
