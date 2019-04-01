@@ -1,3 +1,0 @@
-In order to increase a hit/miss ratio, the sequence should consist of the same number. As we want to get access to the same page, it will always be in the page frame.
-
-In order to decrease  a hit/miss ratio, the sequence should constitst of distinct numbers.
